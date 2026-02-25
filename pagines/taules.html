@@ -1,0 +1,185 @@
+<!DOCTYPE html> <!-- # Documento HTML5 -->
+<html> <!-- # Inicio del documento -->
+<head> <!-- # Información interna -->
+    <meta charset="UTF-8"> <!-- # Permite tildes y ñ -->
+    <title>Pagines</title> <!-- # Título de la pestaña -->
+</head>
+<body> <!-- # Contenido visible -->
+
+<header> <!-- # Capçalera superior -->
+	<img src="../imatges/itb.png" width="800" height="300" alt="Capçalera"> <!-- # Imagen desde Descargas -->
+</header>
+
+<ul> <!-- # Lista de navegación -->
+    <li><a href="../index.html">Home</a></li> <!-- # Enlace relativo -->
+    <li><a href="enllacos.html">Enllacos</a></li> <!-- # Otra página -->
+    <li><a href="taules.html">Taules</a></li> <!-- # Otra página -->
+    <li><a href="pagines/javascript.html">Javascript</a></li> <!-- # Otra página -->
+    <li><a href="layout.html">Layout</a></li> <!-- # Otra página -->
+</ul>
+
+<!-- #Taula CLasificació per equips -->
+<!DOCTYPE html> <!-- Indica que es un documento HTML5 -->
+<html lang="ca"> <!-- Inicio del documento HTML en catalán -->
+<head>
+<meta charset="UTF-8"> <!-- Permite usar caracteres especiales -->
+<title>Classificació equips</title> <!-- Título que aparece en la pestaña -->
+
+<style> <!-- Inicio del CSS (estilos) -->
+body{
+  font-family: Arial, Helvetica, sans-serif; /* Tipo de letra */
+  background:#e9e9e9; /* Color de fondo gris claro */
+  padding:20px; /* Espacio interno alrededor */
+}
+
+.taula-wrapper{
+  background:#f4f4f4; /* Fondo gris claro */
+  border-radius:10px; /* Bordes redondeados */
+  padding:15px; /* Espacio interno */
+  max-width:1200px; /* Ancho máximo */
+  margin:auto; /* Centra el contenedor */
+  box-shadow:0 2px 6px rgba(0,0,0,0.2); /* Sombra alrededor */
+}
+
+.titol{
+  font-weight:bold; /* Texto en negrita */
+  font-size:18px; /* Tamaño de letra */
+  margin-bottom:10px; /* Espacio debajo */
+  color:#555; /* Color gris oscuro */
+}
+
+table{
+  width:100%; /* Ocupa todo el ancho */
+  border-collapse:collapse; /* Une los bordes de la tabla */
+  font-size:12px; /* Tamaño del texto */
+}
+
+thead{
+  background:#dcdcdc; /* Fondo gris para encabezado */
+  font-weight:bold; /* Texto en negrita */
+}
+
+th, td{
+  border:1px solid #c8c8c8; /* Bordes de las celdas */
+  padding:4px 6px; /* Espacio interno */
+  text-align:center; /* Centra el texto */
+}
+
+th:first-child,
+td:first-child{
+  width:40px; /* Ancho fijo para la primera columna */
+}
+
+.equip{
+  text-align:left; /* Alinea el texto a la izquierda */
+  color:#c40000; /* Color rojo */
+  font-weight:bold; /* Texto en negrita */
+}
+
+tbody tr:nth-child(even){
+  background:#efefef; /* Color gris para filas pares */
+}
+
+.rojo {
+  color: #c40000; /* Texto rojo */
+  font-weight: bold; /* Texto en negrita */
+}
+
+</style> <!-- Fin del CSS -->
+</head>
+
+<body> <!-- Inicio del cuerpo visible -->
+
+<div class="taula-wrapper"> <!-- Contenedor principal -->
+<div class="titol">Clasificacion equipos</div> <!-- Título de la tabla -->
+
+<table> <!-- Inicio de la tabla -->
+
+<thead> <!-- Encabezado de la tabla -->
+<tr> <!-- Fila del encabezado -->
+<th>Pos.</th> <!-- Columna posición -->
+<th>Equipo</th> <!-- Columna nombre del equipo -->
+<th>Tot.</th> <!-- Columna total de puntos -->
+
+<th class="rojo">AU</th> <!-- Columnas de carreras -->
+<th class="rojo">MA</th>
+<th class="rojo">BA</th>
+<th class="rojo">CH</th>
+<th class="rojo">ES</th>
+<th class="rojo">MO</th>
+<th class="rojo">CA</th>
+<th class="rojo">AT</th>
+<th class="rojo">GB</th>
+<th class="rojo">AL</th>
+<th class="rojo">HU</th>
+<th class="rojo">BE</th>
+<th class="rojo">IT</th>
+<th class="rojo">SG</th>
+<th class="rojo">JA</th>
+<th class="rojo">RU</th>
+
+<th>USA</th> <!-- Últimas carreras -->
+<th>BR</th>
+<th>AB</th>
+</tr>
+</thead>
+
+<tbody> <!-- Cuerpo de la tabla -->
+
+<tr> <!-- Fila equipo 1 -->
+<td>1º</td> <!-- Posición -->
+<td class="equip">Mercedes</td> <!-- Nombre del equipo -->
+<td>565</td> <!-- Total de puntos -->
+<td>25</td><td>43</td><td>43</td><td>43</td><td>43</td>
+<td>18</td><td>43</td><td>25</td><td>40</td><td>27</td>
+<td>18</td><td>43</td><td>25</td><td>43</td><td>43</td>
+<td>25</td><td>18</td><td>25</td><td>43</td>
+</tr>
+
+<tr> <!-- Fila equipo 2 -->
+<td>2º</td>
+<td class="equip">Red Bull</td>
+<td>342</td>
+<td>0</td><td>15</td><td>20</td><td>22</td><td>27</td>
+<td>15</td><td>40</td><td>4</td><td>25</td><td>20</td>
+<td>31</td><td>35</td><td>18</td><td>33</td><td>27</td>
+<td>10</td><td>0</td><td>18</td><td>22</td>
+</tr>
+
+<tr> <!-- Fila equipo 3 -->
+<td>3º</td>
+<td class="equip">Williams</td>
+<td>216</td>
+<td>10</td><td>10</td><td>10</td><td>6</td><td>10</td>
+<td>6</td><td>7</td><td>18</td><td>14</td><td>15</td>
+<td>27</td><td>10</td><td>14</td><td>15</td><td>0</td>
+<td>10</td><td>6</td><td>18</td><td>10</td>
+</tr>
+
+<tr> <!-- Fila equipo 4 -->
+<td>4º</td>
+<td class="equip">Ferrari</td>
+<td>188</td>
+<td>18</td><td>12</td><td>3</td><td>19</td><td>14</td>
+<td>12</td><td>9</td><td>11</td><td>8</td><td>10</td>
+<td>26</td><td>18</td><td>2</td><td>16</td><td>0</td>
+<td>10</td><td>0</td><td>12</td><td>7</td>
+</tr>
+
+<tr> <!-- Fila equipo 5 -->
+<td>5º</td>
+<td class="equip">McLaren</td>
+<td>143</td>
+<td>33</td><td>10</td><td>0</td><td>0</td><td>9</td>
+<td>14</td><td>6</td><td>18</td><td>6</td><td>1</td>
+<td>8</td><td>5</td><td>1</td><td>10</td><td>22</td>
+<td>0</td><td>0</td><td>9</td><td>1</td>
+</tr>
+
+</tbody> <!-- Fin del cuerpo -->
+
+</table> <!-- Fin de la tabla -->
+</div> <!-- Fin del contenedor -->
+
+</body> <!-- # Fin del contenido -->
+</html> <!-- # Fin del documento -->
